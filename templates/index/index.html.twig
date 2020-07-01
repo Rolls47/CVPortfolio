@@ -3,18 +3,22 @@
 {% block title %}Hello IndexController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/Rolls/Coding/QuentinAdadain/src/Controller/IndexController.php'|file_link(0) }}">src/Controller/IndexController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/Rolls/Coding/QuentinAdadain/templates/index/index.html.twig'|file_link(0) }}">templates/index/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <div class="d-flex align-items-center justify-content-around index">
+        <div class="propos ml-5 mt-5">
+        <h1>À propos</h1>
+        </div>
+        <div class="index-description mr-5 ml-5 mt-5">
+        <p>
+            Motivation, esprit d'équipe, curiosité et communication sont des qualités que j'ai pu acquérir lors de mon
+            parcours professionnel et qui sont pour moi essentielles dans un métier où le travail en équipe est
+            omniprésent.
+            Le fait de se remettre en question tous les jours et développer des projets sont des choses excitantes pour
+            moi. L'irréalisable ne l'est que lorsque l'on ne veut pas s'en donner les moyens.
+            J'aime découvrir et apprendre, autonome, je sais adapter mon travail et mon énergie afin d'être efficace
+            face à toutes les situations.
+            Après une licence dans le commerce et plus de 4 ans d'expérience dans ce même domaine, j'ai décidé de me
+            réorienter vers un métier qui me tient à cœur depuis toujours : le développement web.
+        </p>
+        </div>
+    </div>
 {% endblock %}
