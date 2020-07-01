@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\PortofolioRepository;
+use App\Repository\PortfolioRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=PortofolioRepository::class)
  */
-class Portofolio
+class Portfolio
 {
     /**
      * @ORM\Id()
