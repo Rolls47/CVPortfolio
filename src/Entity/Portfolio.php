@@ -2,7 +2,7 @@
 
 namespace App\Entity;
 
-use App\Repository\PortfolioRepository;
+use App\Repository\PortofolioRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
