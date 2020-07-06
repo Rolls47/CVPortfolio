@@ -28,10 +28,12 @@ class JobType extends AbstractType
                 'label' => 'Ville :'
             ])
             ->add('startDate', DateType::class, [
-                'label' => 'début :'
+                'label' => 'début :',
+                'widget' => 'single_text'
             ])
             ->add('endDate', DateType::class, [
-                'label' => 'Fin :'
+                'label' => 'Fin :',
+                'widget' => 'single_text'
             ])
             ->add('description', TextType::class, [
                 'label' => 'Description :'
