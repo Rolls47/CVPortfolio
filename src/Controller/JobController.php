@@ -17,6 +17,8 @@ class JobController extends AbstractController
 {
     /**
      * @Route("/", name="job_index", methods={"GET"})
+     * @param JobRepository $jobRepository
+     * @return Response
      */
     public function index(JobRepository $jobRepository): Response
     {
@@ -27,6 +29,8 @@ class JobController extends AbstractController
 
     /**
      * @Route("/new", name="job_new", methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
@@ -50,6 +54,8 @@ class JobController extends AbstractController
 
     /**
      * @Route("/{id}", name="job_show", methods={"GET"})
+     * @param Job $job
+     * @return Response
      */
     public function show(Job $job): Response
     {
@@ -60,6 +66,9 @@ class JobController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="job_edit", methods={"GET","POST"})
+     * @param Request $request
+     * @param Job $job
+     * @return Response
      */
     public function edit(Request $request, Job $job): Response
     {
@@ -80,6 +89,9 @@ class JobController extends AbstractController
 
     /**
      * @Route("/{id}", name="job_delete", methods={"DELETE"})
+     * @param Request $request
+     * @param Job $job
+     * @return Response
      */
     public function delete(Request $request, Job $job): Response
     {

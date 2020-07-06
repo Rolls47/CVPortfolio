@@ -4,11 +4,13 @@ html{
     height: 100%;
 }
 body {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #108dc7, #ef8e38); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 h1{
-    color: aliceblue;
+    color: #131313;
 }
 
 @import "assets/scss/components/_navbar";
+@import "assets/scss/content/job";
 @import "assets/scss/index";
+
