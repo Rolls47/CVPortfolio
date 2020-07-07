@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20200706211728 extends AbstractMigration
+final class Version20200707174701 extends AbstractMigration
 {
     public function getDescription() : string
     {
@@ -20,12 +20,12 @@ final class Version20200706211728 extends AbstractMigration
     public function up(Schema $schema) : void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE formation ADD logo VARCHAR(255) DEFAULT NULL');
+        $this->addSql('ALTER TABLE formation CHANGE year_of_start year_of_start INT NOT NULL, CHANGE end_of_start end_of_start INT NOT NULL');
     }
 
     public function down(Schema $schema) : void
     {
         // this down() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE formation DROP logo');
+        $this->addSql('ALTER TABLE formation CHANGE year_of_start year_of_start DATE NOT NULL, CHANGE end_of_start end_of_start DATE NOT NULL');
     }
 }
