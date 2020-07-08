@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1 class="mt-5 mb-5 d-flex justify-content-center">Mes Compétences</h1>
+<div class="d-flex justify-content-around">
+    {% for skill in skills %}
+        <img src="{{ skill.image }}" alt="" class="image-skill d-flex justify-content-around">
+        <br>
+    {% endfor %}
+</div>
+{% endblock %}

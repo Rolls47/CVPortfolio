@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-            {{ encore_entry_link_tags('app') }}
-<header>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    {{ encore_entry_link_tags('app') }}
+</head>
+<body>
+<div class="d-flex vh-100">
+    <header class="col-2">
         {% include 'components/_navbar.html.twig' %}
-</header>
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-        {{ encore_entry_script_tags('app') }}
-    </body>
+    </header>
+    <main class="col-10">
+    {% block body %}{% endblock %}
+    </main>
+</div>
+{% block javascripts %}{% endblock %}
+{{ encore_entry_script_tags('app') }}
+</body>
 </html>
