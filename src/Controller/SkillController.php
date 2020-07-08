@@ -17,6 +17,8 @@ class SkillController extends AbstractController
 {
     /**
      * @Route("/", name="skill_index", methods={"GET"})
+     * @param SkillRepository $skillRepository
+     * @return Response
      */
     public function index(SkillRepository $skillRepository): Response
     {

@@ -42,6 +42,11 @@ class Formation
      */
     private $endOfStart;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $logo;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -103,6 +108,18 @@ class Formation
     public function setEndOfStart(int $endOfStart): self
     {
         $this->endOfStart = $endOfStart;
+
+        return $this;
+    }
+
+    public function getLogo(): ?string
+    {
+        return $this->logo;
+    }
+
+    public function setLogo(?string $logo): self
+    {
+        $this->logo = $logo;
 
         return $this;
     }
